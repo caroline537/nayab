@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+@theme {
+  /* ── Fonts ── */
+  --font-cormorant: 'Cormorant Garamond', serif;
+  --font-heebo: 'Heebo', sans-serif;
+  --font-helvetica: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  --font-georgia: 'Georgia', serif;
+
+  /* ── Layout / surfaces ── */
+  --color-page-bg: #0e0e0e;
+  --color-chat-bg: #ffffff;
+  --color-profile-bg: #f7f7f7;
+
+  /* ── Borders / dividers ── */
+  --color-divider: #d8d8d8;
+  --color-handle: #d8d8d8;
+  --color-question-border: #727874;
+
+  /* ── Chat input ── */
+  --color-chat-input-bg: #f7f7f7;
+  --color-chat-input-mobile-bg: #f6f5f1;
+  --color-chat-input-mobile-border: #f7f5f0;
+  --color-chat-arrow-bg: #b6b9b7;
+  --color-chat-arrow-hover: #a0a3a1;
+  --color-placeholder: #8a8a8a;
+
+  /* ── Text ── */
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #555555;
+  --color-beta-text: #727874;
+  --color-evergreen-dark: #575b58;
+}
+
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    @apply min-h-dvh antialiased;
+  }
+
+  #root {
+    @apply min-h-dvh;
+  }
+}
